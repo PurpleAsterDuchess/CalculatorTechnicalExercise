@@ -3,12 +3,15 @@
 a. An introduction to the app.
 b. List the requirements you have managed to implement.
 c. Tell the user how to clone and run your code?
+d. further developments
 
+==============================
 a. An introduction to the app.
 ==============================
 This program is written in python. It allows basic arithmatic of both decimal and whole numbers.
 It also allows conversion between different units.
 
+==============================
 b. List the requirements you have managed to implement.
 ==============================
 MUST:
@@ -45,3 +48,11 @@ can convert between Decimal, Binary, Octal and Hexadecimal.
 
 # As a user I would like to use the calculator for more advanced arithmetic
 operations so that I can chain simple equations together such as (100+26)/6.
+
+==============================
+d. further developments
+==============================
+1. How to download
+2. Error checking
+3. testing
+4. other could things
