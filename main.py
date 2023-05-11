@@ -8,11 +8,11 @@ while repeat:
     print("Enter 0 to close\n"+
                 "Enter 1 for the normal calculator \n"+
                 "Enter 2 for the conversion calculator")
-    ahhh = int(input())
+    option = int(input())
     clear()
-    if ahhh == 1:
+    if option == 1:
         calc()
-    elif ahhh == 2:
+    elif option == 2:
         conversion()
     else:
-        repeat == False
+        repeat = False
