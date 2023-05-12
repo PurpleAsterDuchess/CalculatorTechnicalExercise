@@ -114,7 +114,13 @@ def conversion():
                 "Enter 7 to convert days to seconds\n"+
                 "Enter 8 to convert seconds to days\n")
     
-    convert = int(input())
+    convert = input()
+    if floatCheck(convert) == True:
+      convert = float(convert)
+    else:
+      print("That was not a valid input")
+      sleep(delay)
+      return
 
     num = input("Please enter a number that you would like to convert: ")
     # error check
@@ -141,4 +147,8 @@ def conversion():
        day2s(num)
     elif convert == 8:
        s2day(num)
+    else:
+      print("That was not a valid input")
+      sleep(delay)
+      return
     input("Press enter to continue...")
