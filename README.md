@@ -11,6 +11,10 @@ a. An introduction to the app.
 This program is written in python. It allows basic arithmatic of both decimal and whole numbers.
 It also allows conversion between different units.
 
+Instructions to download and run:
+1. Install python3
+2. Clone repo to local drive
+
 ==============================
 b. List the requirements you have managed to implement.
 ==============================
