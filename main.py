@@ -1,5 +1,5 @@
 # get the code from calculator.py
-from calculator import *
+from functions import *
 
 repeat = True
 while repeat:
