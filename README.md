@@ -6,6 +6,7 @@ c. Tell the user how to clone and run your code?
 d. further developments
 
 ==============================
+
 a. An introduction to the app.
 ==============================
 This program is written in python. It allows basic arithmatic of both decimal and whole numbers.
@@ -18,10 +19,11 @@ Instructions to download and run:
 4. To run the file on windows, open the location of the file in windows explorer and double click on main.py
 
 ==============================
+
 b. List the requirements you have managed to implement.
 ==============================
 MUST:
-! As a user I want the calculator application hosted on GitHub in a public repository
+As a user I want the calculator application hosted on GitHub in a public repository
 so that anyone can access the application and has clear instructions on how to
 download and run the calculator in the form of a readme.
 
@@ -58,7 +60,4 @@ operations so that I can chain simple equations together such as (100+26)/6.
 ==============================
 d. further developments
 ==============================
-1. How to download
-2. Error checking
 3. testing
-4. other could things
