@@ -13,14 +13,40 @@ def clear():
     else:
         _ = system("clear")
 
+# error checking function
+def floatCheck(num):
+    try:
+        float(num)
+        return True
+    except ValueError:
+        return False
+    
+
 def calc():
     sleep(delay)
     clear()
     # ask user for input
-    num1 = float(input("Please enter the first number: "))
+    num1 = input("Please enter the first number: ")
+  
+    # error check
+    if floatCheck(num1) == True:
+      num1 = float(num1)
+    else:
+      print("That was not a valid input")
+      sleep(delay)
+      return
+      
     opperation = input("Please enter an opperation from the following: +, -, *, / \n")
-    num2 = float(input("Please enter the second number: "))
-
+    num2 = input("Please enter the second number: ")
+  
+    # error check
+    if floatCheck(num2) == True:
+      num2 = float(num2)
+    else:
+      print("That was not a valid input")
+      sleep(delay)
+      return
+      
     # basic calculation
     if (opperation == "+"):
         ans = num1 + num2
@@ -32,6 +58,8 @@ def calc():
         ans = num1 / num2
     else:
         print("That was not a valid opperation")
+        sleep(delay*2)
+        return
 
     print(num1, opperation, num2, "=", ans)
     input("Press enter to continue...")
@@ -65,7 +93,7 @@ def conversion():
       print(inches, "in are", cm, "cm\n")
 
     def cm2in(cm):
-        inches = cm /2.54
+        inches = cm / 2.54
         print(cm, "cm are", inches, "in\n")
 
     def day2s(day):
@@ -73,7 +101,7 @@ def conversion():
         print(day, "days are", s, "seconds\n")
     
     def s2day(s):
-        day = s/(24*60*60)
+        day = s/(24 * 60 * 60)
         print(s, "seconds are", day, "days\n")
 
 
@@ -88,8 +116,15 @@ def conversion():
     
     convert = int(input())
 
-    num = float(input("Please enter a number that you would like to convert: "))
- 
+    num = input("Please enter a number that you would like to convert: ")
+    # error check
+    if floatCheck(num) == True:
+      num = float(num)
+    else:
+      print("That was not a valid input")
+      sleep(delay)
+      return
+  
     if convert == 1:
         kilo2stone(num)
     elif convert == 2:
