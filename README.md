@@ -13,7 +13,9 @@ It also allows conversion between different units.
 
 Instructions to download and run:
 1. Install python3
-2. Clone repo to local drive
+2. Download the zip file
+3. Unzip the file
+4. To run the file on windows, open the location of the file in windows explorer and double click on main.py
 
 ==============================
 b. List the requirements you have managed to implement.
