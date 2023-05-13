@@ -9,13 +9,13 @@ c. Tell the user how to clone and run your code?
 a. An introduction to the app.
 ==============================
 This program is written in python. It allows basic arithmatic of both decimal and whole numbers.
-It also allows conversion between different units.
+It allows conversion between different units.  It also allows conversion between bases (Binary, Octal, Decimal, Hexadecimal).
 
 Instructions to download and run:
 1. Install python3
 2. Download the zip file
 3. Unzip the file
-4. To run the file on windows, open the location of the file in windows explorer and double click on main.py
+4. To run the file on windows, open the location of the file in windows explorer, and double click on main.py
 
 ==============================
 
