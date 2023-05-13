@@ -1,5 +1,3 @@
-import math
-
 # use os to clear screen after displaying menu
 from os import system, name
 
