@@ -17,6 +17,9 @@ Instructions to download and run:
 3. Unzip the file
 4. To run the file on windows, open the location of the file in windows explorer, and double click on main.py
 
+Error checking done for unit converter. 
+Error checking to be done for base converter.
+
 ==============================
 
 b. List the requirements you have managed to implement.
