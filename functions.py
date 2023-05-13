@@ -196,11 +196,11 @@ def convertBase():
     
   def hex2binary(hexadecimal):
     decimal = hex2dec(hexadecimal)
-    return dec2binary(decimal)
+    return decimal2binary(decimal)
     
   def hex2octal(hexadecimal):
     decimal = hex2dec(hexadecimal)
-    return dec2octal(decimal)
+    return decimal2octal(decimal)
 
   def decimal():
     decimal = int(input("Enter a decimal number: "))
