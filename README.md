@@ -3,7 +3,6 @@
 a. An introduction to the app.
 b. List the requirements you have managed to implement.
 c. Tell the user how to clone and run your code?
-d. further developments
 
 ==============================
 
@@ -41,9 +40,6 @@ SHOULD:
 As a user I want to be able to work with both whole numbers and decimal
 numbers so that the calculator allows for more versatile input and output.
 
-# As a user I care about the accuracy and code quality, as such I need tests to prove
-that Addition, Subtraction, Multiplication and Division sums work as expected.
-
 As a user I would like to be able to convert between the following units:
 - Kilos to Stone
 - Gigabytes to bytes
@@ -51,13 +47,6 @@ As a user I would like to be able to convert between the following units:
 - Days to Seconds
 
 COULD
-# As a user I would like to use the application for Programmatic operation so that I
+As a user I would like to use the application for Programmatic operation so that I
 can convert between Decimal, Binary, Octal and Hexadecimal.
 
-# As a user I would like to use the calculator for more advanced arithmetic
-operations so that I can chain simple equations together such as (100+26)/6.
-
-==============================
-d. further developments
-==============================
-3. testing
