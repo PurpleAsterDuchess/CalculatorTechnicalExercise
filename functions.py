@@ -151,7 +151,7 @@ def conversion():
       return
     input("Press enter to continue...")
 
-# error check tbd
+# error check to be done
 def convertBase():
   sleep(delay)
   clear()
