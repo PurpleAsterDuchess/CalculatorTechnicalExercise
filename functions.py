@@ -152,3 +152,117 @@ def conversion():
       sleep(delay)
       return
     input("Press enter to continue...")
+
+# no error checking done
+def convertBase():
+  sleep(delay)
+  clear()
+  """
+  Decimal, Binary, Octal and Hexadecimal.
+  """
+  # [2:] splits string so 0b is removed from the beginning
+  def decimal2binary(decimal):
+    return bin(decimal)[2:]
+    
+  def decimal2octal(decimal):
+    return oct(decimal)[2:]
+    
+  def decimal2hex(decimal):
+    return hex(decimal)[2:]
+    
+  def binary2dec(binary):
+    # 2 tells the program to use decimal
+    return int(binary, 2)
+    
+  def binary2octal(binary):
+    decimal = binary2dec(binary)
+    return decimal2octal(decimal)
+    
+  def binary2hex(binary):
+    decimal = binary2dec(binary)
+    return decimal2hex(decimal)
+    
+  def oct2dec(octal):
+    return int(octal, 8)
+    
+  def oct2binary(octal):
+    decimal = oct2dec(octal)
+    return decimal2binary(decimal)
+    
+  def oct2hex(octal):
+    decimal = oct2dec(octal)
+    return decimal2hex(decimal)
+    
+  def hex2dec(hexadecimal):
+    return int(hexadecimal, 16)
+    
+  def hex2binary(hexadecimal):
+    decimal = hex2dec(hexadecimal)
+    return dec2binary(decimal)
+    
+  def hex2octal(hexadecimal):
+    decimal = hex2dec(hexadecimal)
+    return dec2octal(decimal)
+
+  def decimal():
+    decimal = int(input("Enter a decimal number: "))
+    binary = decimal2binary(decimal)
+    octal = decimal2octal(decimal)
+    hexadecimal = decimal2hex(decimal)
+    print("Binary:", binary)
+    print("Octal:", octal)
+    print("Hexadecimal:", hexadecimal)
+    
+  def binary():
+    binary = input("Enter a binary number: ")
+    decimal = binary2dec(binary)
+    octal = binary2octal(binary)
+    hexadecimal = binary2hex(binary)
+    print("Decimal:", decimal)
+    print("Octal:", octal)
+    print("Hexadecimal:", hexadecimal)
+    
+  def octal():
+    octal = input("Enter an octal number: ")
+    decimal = oct2dec(octal)
+    binary = oct2binary(octal)
+    hexadecimal = oct2hex(octal)
+    print("Decimal:", decimal)
+    print("Binary:", binary)
+    print("Hexadecimal:", hexadecimal)
+    
+  def hexadecimal():
+    hexadecimal = input("Enter a hexadecimal number: ")
+    decimal = hex2dec(hexadecimal)
+    binary = hex2binary(hexadecimal)
+    octal = hex2octal(hexadecimal)
+    print("Decimal:", decimal)
+    print("Binary:", binary)
+    print("Octal:", octal)
+  
+  print("Enter 1 to convert decimal to binary, octal, hexadecimal\n" +
+        "Enter 2 to covert binary to decimal, octal, hexadecimal\n"+
+        "Enter 3 to convert octal to decimal, binary, hexadecimal\n"+
+        "Enter 4 to convert hexadecimal to decimal, binary, octal\n")
+    
+  convert = input()
+  if floatCheck(convert) == True:
+    convert = float(convert)
+  else:
+    print("That was not a valid input")
+    sleep(delay)
+    return
+
+  if convert == 1:
+    decimal()
+  elif convert == 2:
+    binary()
+  elif convert == 3:
+    octal()
+  elif convert == 4:
+    hexadecimal()
+  else:
+    print("That was not a valid input")
+    sleep(delay)
+    return
+  input("Press enter to continue...")    
