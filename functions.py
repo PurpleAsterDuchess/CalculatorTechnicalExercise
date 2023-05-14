@@ -35,6 +35,7 @@ def calc():
       return
       
     opperation = input("Please enter an opperation from the following: +, -, *, / \n")
+    
     num2 = input("Please enter the second number: ")
   
     # error check
